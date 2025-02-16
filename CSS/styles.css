@@ -137,9 +137,21 @@ footer {
   header h1 {
     font-size: 2em;
   }
-  
+
+  nav {
+    width: 40%;
+  }
+
   .hero {
     height: 860px;
     background-position: center;
+  }
+}
+
+/* Media Query for Large Desktops */
+@media screen and (min-width: 1920px) {
+
+  nav {
+    width: 40%;
   }
 }
