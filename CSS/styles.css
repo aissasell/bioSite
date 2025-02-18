@@ -62,10 +62,16 @@ main {
   clear: left;
 }
 
+.hero-mob {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .intro {
-  width: 60%;
+  width: 80%;
   margin: auto;
   font-family: "Roboto", sans-serif;
+  text-align: justify;
 }
 
 footer {
@@ -87,17 +93,23 @@ footer {
     display: block;
   }
 
+  header {
+    display: grid;
+    grid-template-columns: auto 55%;
+    align-items: center;
+  }
+
+  .logo {
+    grid-column: 1;
+  }
+
   header h1 {
     font-size: 1.25em;
   }
 
-  .logo {
-    float: left;
-  }
-
   nav {
     float: right;
-    width: 55%;
+    grid-column: 2;
     font-size: 1.12em;
   }
 
@@ -134,24 +146,51 @@ footer {
 /* Media Query for Desktop Viewports */
 @media screen and (min-width: 1015px) {
 
-  header h1 {
-    font-size: 2em;
+  header {
+    padding: 2%;
+    display: grid;
+    grid-template-columns: auto 40%;
+    align-items: center;
   }
 
-  nav {
-    width: 40%;
+  .logo {
+    justify-self: start;
+  }
+
+  header h1 {
+    font-size: 2em;
   }
 
   .hero {
     height: 860px;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .intro {
+    width: 60%;
   }
 }
 
 /* Media Query for Large Desktops */
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1439px) {
+
+  header {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .logo {
+    grid-column: 1;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
 
   nav {
-    width: 40%;
+    grid-column: 4;
+    font-size: 1.2em;
   }
 }
