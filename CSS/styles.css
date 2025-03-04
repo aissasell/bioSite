@@ -27,8 +27,14 @@ header {
   color: #fff;
 }
 
-header h1 {
+.logo h1 {
   text-align: center;
+  color: #fff;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
 }
 
 header nav {
