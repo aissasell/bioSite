@@ -27,12 +27,9 @@ header {
   color: #fff;
 }
 
-.logo h1 {
-  text-align: center;
-  color: #fff;
-}
-
-header a {
+.logo a {
+  font-size: 2em;
+  font-weight: bold;
   text-decoration: none;
   color: #fff;
 }
