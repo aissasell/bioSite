@@ -34,14 +34,44 @@
   <main>
     <div class="hero tab-desk"></div>
     <img src="images/hero-mob.jpg" alt="Reilly holding Lyla" class="mobile hero-mob">
-    <div class="intro">
+    <section class="intro">
+      <h1 tabindex="0">Welcome to Rei's Pets!</h1>
       <p>Reilly is not your average young woman. While many people spend their free time scrolling through social media or hanging out with friends, Reilly has found a unique and rewarding way to spend her time: babysitting dogs. For Reilly, dogs are more than just pets—they’re furry friends who bring joy, laughter, and a sense of purpose to her life. Whether it’s taking them for walks, playing fetch, or simply cuddling on the couch, Reilly has turned her love for dogs into a meaningful hobby that benefits both her and her four-legged clients.</p>
-      <p>If you want your dog to spend an awesome day with Reilly, request an appointment with her by calling this number (999) 999-9999</p>
-    </div>
+      <p>If you want your dog to spend an awesome day with Reilly, request an appointment with her by calling this number (999) 999-9999 or fill out the form bellow</p>
+
+      <form action="#">
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label for="name">First and Last name</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </fieldset>
+        <fieldset>
+          <legend>Dog's Information</legend>
+          <label for="dog">Dog's name</label>
+          <input type="text" id="dog" name="dog" required>
+          <label for="breed">Dog's breed</label>
+          <input type="text" id="breed" name="breed" required>
+        </fieldset>
+        <fieldset>
+          <legend>Date and Time of appointment</legend>
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required>
+          <label for="time">Time</label>
+          <input type="time" id="time" name="time" required>
+        </fieldset>
+        <label for="info">Extra Information</label>
+        <textarea id="info" name="info"></textarea>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2024 reispets.com. All rights reserved.</p>
+    <p tabindex="0">&copy; 2024 reispets.com. All rights reserved.</p>
   </footer>
 </body>
 </html>

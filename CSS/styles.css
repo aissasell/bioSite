@@ -11,6 +11,10 @@ body, header, nav, main, footer, h1, div, img, ul{
   border: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* Show mobile class and hide tab-desk for mobile viewports*/
 .mobile {
   display: block;
@@ -80,9 +84,34 @@ main p {
 }
 
 .intro {
+  padding-top: 5%;
   width: 80%;
   margin: auto;
   text-align: justify;
+}
+
+/* Style rules for form elements */
+
+fieldset, input, select, textarea {
+  margin-bottom: 2%;
+}
+
+label {
+  display: block;
+}
+
+input[type="text"], input[type="email"], input[type="date"], input[type="time"], input[type="tel"], textarea {
+  width: 100%;
+  padding: 1%;
+  margin-top: 1%;
+}
+
+#submit {
+  background-color: #004D40;
+  color: #fff;
+  font-size: 1.12em;
+  font-weight: bold;
+  padding: 10px;
 }
 
 main section {
@@ -161,6 +190,10 @@ footer {
     background-position: 25% 25%;
     width: 100%;
     height: 300px;
+  }
+
+  .intro {
+    padding-top: 2%;
   }
 
   .gallery {
